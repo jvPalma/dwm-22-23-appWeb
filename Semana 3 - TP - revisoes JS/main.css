@@ -1,0 +1,19 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  color: blue;
+  text-align: center;
+}
+#content {
+  padding: 40px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td,
+th {
+  border: 1px solid #91adad;
+}

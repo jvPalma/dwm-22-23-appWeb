@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>EuroMilhoes</title>
+  </head>
+  <body>
+    <h1>Euro Milhoes</h1>
+    <!-- tabela com body vazio -->
+    <div id="content">
+      <table id="table">
+        <thead>
+          <tr>
+            <th>Chave</th>
+            <th>Chave Ordenada</th>
+            <th>Estrelas</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- Actions para adicionar linhas e limpar a tabela -->
+    <div style="text-align: center">
+      <button id="clearAll">limpar Chaves</button>
+      <button id="addKey">Gerar Chave</button>
+    </div>
+  </body>
+  <script src="main.js"></script>
+  <script>
+    // criar variaveis para termos acesso aos elementos
+    const clearAll = document.getElementById("clearAll");
+    const addKey = document.getElementById("addKey");
+    const table = document.getElementById("table");
+
+    // atribuir acção onclick ao elemento (method 1)
+    // addKey.onclick = function () {
+    // addKey.onclick = () => {
+    //   geraChave();
+    // };
+    // addKey.onclick = () => geraChave();
+    addKey.onclick = geraChave;
+  </script>
+</html>
