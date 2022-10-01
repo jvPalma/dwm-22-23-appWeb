@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <section class="container">
+      <form>
+        <h1>Adicionar aluno</h1>
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" />
+
+        <label for="idade">Idade</label>
+        <input type="number" min="18" id="idade" />
+
+        <label for="contacto">Contacto</label>
+        <input type="number" id="contacto" />
+
+        <button class="butao">Adicionar</button>
+      </form>
+
+      <ul id="alunos"></ul>
+    </section>
+  </body>
+</html>

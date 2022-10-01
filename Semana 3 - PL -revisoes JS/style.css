@@ -1,0 +1,52 @@
+.container {
+  width: 50%;
+  margin: auto;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  padding: 20px;
+  padding-top: 10px;
+}
+
+input[type='text'],
+input[type='number'] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.butao {
+  width: 100%;
+  background-color: #4c8baf;
+  color: #fff;
+  border: none;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.butao:hover {
+  background-color: #437b9c;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  padding: 10px;
+  background: #ddd;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.italic-grey {
+  font-style: italic;
+  color: #333;
+}
