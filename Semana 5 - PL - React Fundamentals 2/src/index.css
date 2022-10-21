@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 60vh !important;
+  margin: 10% auto 0;
+  padding: 0.2rem 0 0 0;
+}
+
+.chaves {
+  overflow-y: auto;
+  margin: 0.2rem;
+  height: 100%;
+  text-align: center;
+}
+
+.chaves > p {
+  margin-bottom: 0.3rem;
+}
+
+button {
+  margin: 0.2rem;
+  padding: 0.2rem 0;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+.green-bg {
+  background-color: rgb(106, 255, 106);
+}
