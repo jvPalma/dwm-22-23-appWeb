@@ -6,7 +6,8 @@ function App() {
   return (
     <>
       {/* <MemoExample /> */}
-      <CallbackExample />
+      {/* <CallbackExample /> */}
+      <Desafio />
     </>
   );
 }
