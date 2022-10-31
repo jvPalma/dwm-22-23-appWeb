@@ -9,11 +9,11 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "post",
+    path: "/post",
     element: <PostPage />,
   },
   {
-    path: "post/:example",
+    path: "/post/:batata",
     element: <PostPage />,
   },
 ]);
