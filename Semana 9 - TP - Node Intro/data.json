@@ -1,0 +1,44 @@
+{
+  "nome": "João Palma",
+  "data_nascimento": "01/08/1995",
+  "localidade": "Viana do Castelo",
+  "hab_academicas": [
+    {
+      "grau": "Ensino Superior",
+      "instituicao": "IPVC - ESTG",
+      "tipo_curso": "Licenciatura",
+      "nome_curso": "EI",
+      "data_inicio": "2015-09-01",
+      "data_fim": "2018-07-01"
+    },
+    {
+      "grau": "Ensino Superior",
+      "instituicao": "IPVC - ESTG",
+      "tipo_curso": "Mestrado",
+      "nome_curso": "EI",
+      "data_inicio": "2020-09-01",
+      "data_fim": null
+    }
+  ],
+  "hab_profissionais": [
+    {
+      "data_inicio": "2018-06-01",
+      "data_fim": "2022-06-01",
+      "posicao": "Web Developer",
+      "empresa": "Xpand-it"
+    },
+    {
+      "data_inicio": "2022-06-01",
+      "data_fim": "2022-06-15",
+      "posicao": "Senior FullStack Developer",
+      "empresa": "NearSea Tecnologies"
+    },
+    {
+      "data_inicio": "2022-06-16",
+      "data_fim": null,
+      "posicao": "Head of Software Development Team",
+      "empresa": "NearSea Tecnologies"
+    }
+  ],
+  "projetos": []
+}
