@@ -5,6 +5,7 @@ import morgan from "morgan";
 import "dotenv/config";
 import fs from "fs";
 import Router from "express";
+import e from "express";
 
 //--REST SERVER--//
 const app = express();
@@ -23,6 +24,9 @@ app.use(morgan("short"));
 
 // parse dados dos pedidos no content-type - application/json
 app.use(express.json());
+//  							 |
+// ADICIONAR ESTA LINHA DE BAIXO V
+app.use(express.urlencoded({ extended: true }));
 
 //--ROUTES--//
 const router = Router();
@@ -60,10 +64,38 @@ router.get("/age", (req, res) => {
   res.send(calculateAge(data.data_nascimento));
 });
 
-//		- person professional experience list
-//		- person current age
-//		- person current academic level
-//		- person current job
+//	person current academic level
+
+router.get("/academicLevel", (req, res) => {
+  // é array ordenado
+  // data_fim -> com ou sem valor
+  // se tiver valor, é esse o nivel de exp
+  // se NAO tiver valor, é o nivel anterior
+  const habs = data.hab_academicas.filter((item) => item.data_fim);
+
+  res.send(habs[habs.length - 1].tipo_curso);
+});
+
+//		 person professional experience list
+router.get("/hab_profissionais", (req, res) => {
+  res.send(data.hab_profissionais);
+});
+//		 person current job
+router.get("/currentJob", (req, res) => {
+  const currentJob = data.hab_profissionais.filter((item) => !item.data_fim);
+  res.send(currentJob);
+});
+
+// -  	 												.
+router.post("/post-example", (req, res) => {
+  const requestBody = req.body;
+  const fileData = JSON.stringify(requestBody);
+
+  fs.writeFileSync("savedData.json", fileData, "utf-8");
+
+  res.send({ message: "file saved", data: requestBody });
+});
+// -  	 												.
 
 // correr server no url host:port definido em .env
 app.listen(process.env.SERVER_PORT, process.env.SERVER_HOST, () => {
