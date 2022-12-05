@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "name": "Jose",
+    "birthYear": 2001,
+    "skills": ["React", "Node", "MySQL"],
+    "degrees": [
+      {
+        "institute": "IPVC",
+        "degree": "Desenvolvimento Web e Multimedia",
+        "grade": 13.4
+      },
+      {
+        "institute": "IPCA",
+        "degree": "Engenharia de Computação Gráfica",
+        "grade": 15.2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Ricardo",
+    "birthYear": 2004,
+    "skills": ["C", "Linux"],
+    "degrees": [
+      { "institute": "FCUP", "degree": "Engenharia de Redes ", "grade": 12 }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Maria",
+    "birthYear": 2002,
+    "skills": ["Angular", "Node", "MongoDB"],
+    "degrees": [
+      {
+        "institute": "IPVC",
+        "degree": "Engenharia Informatica",
+        "grade": 16.1
+      },
+      { "institute": "UM", "degree": "Ciencias da Computacao", "grade": 13.8 }
+    ]
+  }
+]
