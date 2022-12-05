@@ -4,6 +4,7 @@ import cors from "cors";
 import morgan from "morgan";
 import "dotenv/config";
 import { routes } from "./routes/index.js";
+import { dbInstance } from "./config/db.js";
 
 //--REST SERVER--//
 const app = express();
@@ -33,6 +34,13 @@ app.use("/api", routes);
 // o host no nosso contexto, é http://localhost:4242
 // Logo, com esta separação, as routes vao estar em:
 // http://localhost:4242/api .....
+
+//Fazer ligação à Base de Dados
+try {
+  dbInstance.sync({ force: false, alter: true });
+} catch (error) {
+  console.info(error);
+}
 
 // correr server no url host:port definido em .env
 app.listen(process.env.SERVER_PORT, process.env.SERVER_HOST, () => {

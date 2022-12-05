@@ -1,4 +1,5 @@
 import Router from "express";
+import { UserModel } from "../models/users.js";
 
 const routes = Router();
 
@@ -7,6 +8,12 @@ const routes = Router();
 // {host}/api/hello
 routes.get("/hello", (req, res) => {
   res.send({ message: "Hello World!" });
+});
+
+routes.get("/users", async (req, res) => {
+  const users = await UserModel.findAll();
+
+  res.send({ users });
 });
 
 export { routes };
