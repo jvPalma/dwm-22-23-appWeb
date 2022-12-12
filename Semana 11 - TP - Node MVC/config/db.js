@@ -9,7 +9,7 @@ import Sequelize from "sequelize";
 
 const dbInstance = new Sequelize({
   host: "localhost",
-  port: 3306,
+  port: 8889,
   username: "myUsername",
   password: "MySecretPassword",
   database: "appweb",
